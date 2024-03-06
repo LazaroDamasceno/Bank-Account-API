@@ -1,4 +1,4 @@
-package com.api.v1.individual_customer.register;
+package com.api.v1.individual_customer;
 
 import java.math.BigInteger;
 import java.util.Optional;
@@ -8,8 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.api.v1.exception.ForbiddenOperationException;
-import com.api.v1.individual_customer.IndividualCustomer;
-import com.api.v1.individual_customer.IndividualCustomerRepository;
 
 import lombok.AllArgsConstructor;
 

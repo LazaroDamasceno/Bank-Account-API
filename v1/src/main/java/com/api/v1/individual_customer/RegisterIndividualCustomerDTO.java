@@ -1,4 +1,4 @@
-package com.api.v1.individual_customer.register;
+package com.api.v1.individual_customer;
 
 import com.api.v1.customer.RegisterCustomerDTO;
 import com.api.v1.dtos.DateDTO;

@@ -1,6 +1,5 @@
 package com.api.v1.customer;
 
-import java.math.BigInteger;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -28,7 +27,7 @@ public class Customer {
     private String email;
 
     @Column(nullable = false)
-    private BigInteger phoneNumber;
+    private String phoneNumber;
 
     @Column(nullable = false)
     private String fullAddress;
@@ -36,7 +35,7 @@ public class Customer {
     public Customer(RegisterCustomerDTO dto) {
         this.fullName = dto.fullName();
         this.email = dto.email();
-        this.phoneNumber = new BigInteger(dto.phoneNumber());
+        this.phoneNumber = dto.phoneNumber();
         this.fullAddress = dto.fullAddress();
     } 
 

@@ -1,6 +1,5 @@
 package com.api.v1.business_client;
 
-import java.math.BigInteger;
 import java.util.UUID;
 
 import com.api.v1.customer.Customer;
@@ -27,14 +26,14 @@ public class BusinessClient {
     private final UUID id = UUID.randomUUID();
 
     @Column(nullable = false, unique = true)
-    private BigInteger ein;
+    private String ein;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    public BusinessClient(RegisterBusinessClientDTO dto) {
-        this.ein = new BigInteger(dto.ein());
+    BusinessClient(RegisterBusinessClientDTO dto) {
+        this.ein = dto.ein();
         this.customer = new Customer(dto.customer());
     }
 
