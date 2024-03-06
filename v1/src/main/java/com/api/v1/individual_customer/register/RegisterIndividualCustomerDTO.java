@@ -1,6 +1,7 @@
 package com.api.v1.individual_customer.register;
 
 import com.api.v1.customer.RegisterCustomerDTO;
+import com.api.v1.dtos.DateDTO;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -12,9 +13,8 @@ public record RegisterIndividualCustomerDTO(
     @NotBlank
     String ssn,
 
-    @Pattern(regexp = "[\\d]{2}/[\\d]{2}/[\\d]{4}")
-    @NotBlank
-    String birthDay,
+    @NotNull
+    DateDTO birthDay,
 
     @NotNull
     RegisterCustomerDTO customer

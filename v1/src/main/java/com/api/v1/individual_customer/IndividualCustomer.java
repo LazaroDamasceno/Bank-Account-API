@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 import com.api.v1.customer.Customer;
-import com.api.v1.dtos.DateDTO;
 import com.api.v1.individual_customer.register.RegisterIndividualCustomerDTO;
 
 import jakarta.persistence.CascadeType;
@@ -40,7 +39,7 @@ public class IndividualCustomer {
     private Customer customer;
 
     public IndividualCustomer(RegisterIndividualCustomerDTO dto) {
-        this.birthDay = new DateDTO(dto.birthDay()).get();
+        this.birthDay = dto.birthDay().get();
         this.ssn = new BigInteger(dto.ssn());
         this.customer = new Customer(dto.customer());
     }
