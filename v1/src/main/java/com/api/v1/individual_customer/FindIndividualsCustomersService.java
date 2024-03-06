@@ -1,12 +1,9 @@
-package com.api.v1.individual_customer.find_all;
+package com.api.v1.individual_customer;
 
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import com.api.v1.individual_customer.IndividualCustomer;
-import com.api.v1.individual_customer.IndividualCustomerRepository;
 
 import lombok.AllArgsConstructor;
 

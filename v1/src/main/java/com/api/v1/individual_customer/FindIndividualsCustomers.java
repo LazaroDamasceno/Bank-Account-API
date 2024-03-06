@@ -1,10 +1,8 @@
-package com.api.v1.individual_customer.find_all;
+package com.api.v1.individual_customer;
 
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
-
-import com.api.v1.individual_customer.IndividualCustomer;
 
 public interface FindIndividualsCustomers {
 
