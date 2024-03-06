@@ -1,0 +1,12 @@
+{
+    "ssn": "123456789",
+    "birthDay": {
+      "date": "12/10/2000"
+    },
+    "customer": {
+      "fullName": "Gabriel Madina",
+      "email": "madina@gmadina.net",
+      "phoneNumber": "1234567890",
+      "fullAddress": "Ontario"
+    }
+}
