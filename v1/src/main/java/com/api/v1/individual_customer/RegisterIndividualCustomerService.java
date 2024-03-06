@@ -1,6 +1,5 @@
 package com.api.v1.individual_customer;
 
-import java.math.BigInteger;
 import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,7 @@ public class RegisterIndividualCustomerService implements RegisterIndividualCust
 
     @Override
     public ResponseEntity<Void> register(RegisterIndividualCustomerDTO dto) {
-        Optional<IndividualCustomer> optional = repository.findBySsn(new BigInteger(dto.ssn()));
+        Optional<IndividualCustomer> optional = repository.findBySsn(dto.ssn());
         if (optional.isPresent()) throw new ForbiddenOperationException("Individual customer already exist.");
         IndividualCustomer individualCustomer = new IndividualCustomer(dto);
         repository.save(individualCustomer);
