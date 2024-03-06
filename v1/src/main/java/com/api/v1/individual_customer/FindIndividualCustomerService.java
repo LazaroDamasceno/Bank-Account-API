@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.api.v1.exception.ForbiddenOperationException;
+import com.api.v1.dtos.ForbiddenOperationException;
 
 import lombok.AllArgsConstructor;
 
