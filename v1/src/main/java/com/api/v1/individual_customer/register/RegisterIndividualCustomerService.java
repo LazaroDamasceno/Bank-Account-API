@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.api.v1.exception.ForbiddenOperation;
+import com.api.v1.exception.ForbiddenOperationException;
 import com.api.v1.individual_customer.IndividualCustomer;
 import com.api.v1.individual_customer.IndividualCustomerRepository;
 
@@ -22,7 +22,7 @@ public class RegisterIndividualCustomerService implements RegisterIndividualCust
     @Override
     public ResponseEntity<Void> register(RegisterIndividualCustomerDTO dto) {
         Optional<IndividualCustomer> optional = repository.findBySsn(new BigInteger(dto.ssn()));
-        if (optional.isPresent()) throw new ForbiddenOperation("Individual customer already exist.");
+        if (optional.isPresent()) throw new ForbiddenOperationException("Individual customer already exist.");
         IndividualCustomer individualCustomer = new IndividualCustomer(dto);
         repository.save(individualCustomer);
         return new ResponseEntity<>(HttpStatus.CREATED);
