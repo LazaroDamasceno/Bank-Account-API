@@ -1,6 +1,5 @@
 package com.api.v1.individual_customer;
 
-import java.math.BigInteger;
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -31,7 +30,7 @@ public class IndividualCustomer {
     private LocalDate birthDay;
 
     @Column(nullable = false, unique = true)
-    private BigInteger ssn;
+    private String ssn;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "customer_id")
@@ -39,7 +38,7 @@ public class IndividualCustomer {
 
     IndividualCustomer(RegisterIndividualCustomerDTO dto) {
         this.birthDay = dto.birthDay().get();
-        this.ssn = new BigInteger(dto.ssn());
+        this.ssn = dto.ssn();
         this.customer = new Customer(dto.customer());
     }
     
