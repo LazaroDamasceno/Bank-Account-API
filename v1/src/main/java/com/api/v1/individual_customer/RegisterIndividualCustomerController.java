@@ -4,6 +4,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.api.v1.auxiliary.Register;
+
 import org.springframework.web.bind.annotation.RequestBody;
 
 import lombok.AllArgsConstructor;
@@ -11,7 +14,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/individual-customer")
 @AllArgsConstructor
-class RegisterIndividualCustomerController implements RegisterIndividualCustomer {
+class RegisterIndividualCustomerController implements Register<RegisterIndividualCustomerDTO> {
     
     private final RegisterIndividualCustomerService service;
     

@@ -4,11 +4,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.api.v1.auxiliary.Register;
+
 import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-class RegisterBusinessClientService implements RegisterBusinessClient {
+class RegisterBusinessClientService implements Register<RegisterBusinessClientDTO> {
 
     private final BusinessClientRepository repository;
 

@@ -7,12 +7,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.api.v1.auxiliary.ForbiddenOperationException;
+import com.api.v1.auxiliary.Register;
 
 import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-class RegisterIndividualCustomerService implements RegisterIndividualCustomer {
+class RegisterIndividualCustomerService implements Register<RegisterIndividualCustomerDTO> {
 
     private final IndividualCustomerRepository repository;
 
