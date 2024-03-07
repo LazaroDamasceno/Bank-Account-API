@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 
-interface FindIndividualsCustomers {
+interface FindAllIndividualCustomers {
 
     ResponseEntity<List<IndividualCustomer>> findAll();
     

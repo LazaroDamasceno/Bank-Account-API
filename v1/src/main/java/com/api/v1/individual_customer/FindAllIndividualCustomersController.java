@@ -12,9 +12,9 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/individuals-customers")
 @AllArgsConstructor
-class FindIndividualsCustomersController implements FindIndividualsCustomers {
+class FindAllIndividualCustomersController implements FindAllIndividualCustomers {
 
-    private final FindIndividualsCustomersService service;
+    private final FindAllIndividualCustomersService service;
 
     @Override
     @GetMapping
