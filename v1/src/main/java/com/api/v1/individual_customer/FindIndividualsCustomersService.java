@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class FindIndividualsCustomersService implements FindIndividualsCustomers {
+class FindIndividualsCustomersService implements FindIndividualsCustomers {
 
     private final IndividualCustomerRepository repository;
 

@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class RegisterIndividualCustomerService implements RegisterIndividualCustomer {
+class RegisterIndividualCustomerService implements RegisterIndividualCustomer {
 
     private final IndividualCustomerRepository repository;
 

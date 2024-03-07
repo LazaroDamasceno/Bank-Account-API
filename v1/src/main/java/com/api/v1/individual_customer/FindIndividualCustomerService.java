@@ -10,7 +10,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class FindIndividualCustomerService {
+class FindIndividualCustomerService {
       
     private final IndividualCustomerRepository repository;
     

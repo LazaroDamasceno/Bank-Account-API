@@ -11,7 +11,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/bussiness-client")
 @AllArgsConstructor
-public class RegisterBusinessClientController implements RegisterBusinessClient {
+class RegisterBusinessClientController implements RegisterBusinessClient {
     
     private final RegisterBusinessClientService service;
 

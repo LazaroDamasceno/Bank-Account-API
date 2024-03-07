@@ -5,7 +5,7 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IndividualCustomerRepository extends JpaRepository<IndividualCustomer, UUID> {
+interface IndividualCustomerRepository extends JpaRepository<IndividualCustomer, UUID> {
 
     Optional<IndividualCustomer> findBySsn(String ssn);
     

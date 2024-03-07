@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class RegisterBusinessClientService implements RegisterBusinessClient {
+class RegisterBusinessClientService implements RegisterBusinessClient {
 
     private final BusinessClientRepository repository;
 

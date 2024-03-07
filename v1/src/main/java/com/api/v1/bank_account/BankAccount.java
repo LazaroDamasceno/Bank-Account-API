@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @Setter
 @NoArgsConstructor
-public class BankAccount<T> {
+class BankAccount<T> {
 
     @Id
     private final UUID id = UUID.randomUUID();
@@ -20,5 +20,9 @@ public class BankAccount<T> {
     private T user;
     
     private double balance = 0.0;
+
+    BankAccount(T user) {
+        this.user = user;
+    }
 
 }

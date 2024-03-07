@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 
-public interface FindBusinessesClients {
+interface FindBusinessesClients {
     
     ResponseEntity<List<BusinessClient>> findAll();
 
