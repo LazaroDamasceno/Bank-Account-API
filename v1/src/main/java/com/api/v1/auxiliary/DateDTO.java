@@ -1,4 +1,4 @@
-package com.api.v1.dtos;
+package com.api.v1.auxiliary;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
