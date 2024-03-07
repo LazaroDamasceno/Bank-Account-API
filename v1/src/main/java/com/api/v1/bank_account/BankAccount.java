@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class BankAccount {
+class BankAccount {
     
     @Id
     private final UUID id = UUID.randomUUID();

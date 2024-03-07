@@ -11,7 +11,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class FindBankAccountService {
+class FindBankAccountService {
 
     private final BankAccountRepository repository;
 

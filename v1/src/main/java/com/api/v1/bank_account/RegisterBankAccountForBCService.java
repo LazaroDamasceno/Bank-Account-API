@@ -1,12 +1,10 @@
-package com.api.v1.bank_account.for_bc.register;
+package com.api.v1.bank_account;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.api.v1.generic_interfaces.Register;
-import com.api.v1.bank_account.for_bc.BankAccountForBC;
-import com.api.v1.bank_account.for_bc.BankAccountForBCRepository;
 import com.api.v1.business_client.BusinessClient;
 import com.api.v1.business_client.FindBusinessClientService;
 

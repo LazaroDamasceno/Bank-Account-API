@@ -1,8 +1,7 @@
-package com.api.v1.bank_account.for_bc;
+package com.api.v1.bank_account;
 
 import java.util.UUID;
 
-import com.api.v1.bank_account.BankAccount;
 import com.api.v1.business_client.BusinessClient;
 
 import jakarta.persistence.*;
@@ -15,7 +14,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class BankAccountForBC {
+class BankAccountForBC {
     
     @Id
     private final UUID id = UUID.randomUUID();

@@ -1,4 +1,4 @@
-package com.api.v1.bank_account.for_bc.withdrawn;
+package com.api.v1.bank_account;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/vq/bank-account-for-bc")
 @AllArgsConstructor
-public class WithDrawnCastFromBankAccountForBCController implements WithDrawnCash {
+class WithDrawnCastFromBankAccountForBCController implements WithDrawnCash {
     
     private final WithDrawnCastFromBankAccountForBCService service;
     

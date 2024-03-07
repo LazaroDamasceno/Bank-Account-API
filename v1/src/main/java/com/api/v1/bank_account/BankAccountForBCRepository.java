@@ -1,4 +1,4 @@
-package com.api.v1.bank_account.for_bc;
+package com.api.v1.bank_account;
 
 import java.util.UUID;
 
@@ -6,9 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.api.v1.bank_account.BankAccount;
-
-public interface BankAccountForBCRepository extends JpaRepository<BankAccountForBC, UUID> {
+interface BankAccountForBCRepository extends JpaRepository<BankAccountForBC, UUID> {
 
     @Query("""
         select bk from BankAccountForBC bk

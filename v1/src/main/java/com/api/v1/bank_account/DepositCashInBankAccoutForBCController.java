@@ -1,4 +1,4 @@
-package com.api.v1.bank_account.for_bc.deposit;
+package com.api.v1.bank_account;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/bank-account-for-bc")
 @AllArgsConstructor
-public class DepositCashInBankAccoutForBCController implements DepositCash {
+class DepositCashInBankAccoutForBCController implements DepositCash {
     
     private final DepositCashInBankAccoutForBCService service;
     

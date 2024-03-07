@@ -1,11 +1,8 @@
-package com.api.v1.bank_account.for_bc.deposit;
+package com.api.v1.bank_account;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.api.v1.bank_account.for_bc.BankAccountForBC;
-import com.api.v1.bank_account.for_bc.BankAccountForBCRepository;
-import com.api.v1.bank_account.for_bc.FindBankAccountForBCService;
 import com.api.v1.exceptions.ForbiddenOperationException;
 import com.api.v1.generic_interfaces.DepositCash;
 

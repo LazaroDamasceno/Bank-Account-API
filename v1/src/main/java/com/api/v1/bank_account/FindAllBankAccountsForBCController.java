@@ -1,4 +1,4 @@
-package com.api.v1.bank_account.for_bc.all;
+package com.api.v1.bank_account;
 
 import java.util.List;
 
@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.v1.bank_account.for_bc.BankAccountForBC;
 import com.api.v1.generic_interfaces.FindAll;
 
 import lombok.AllArgsConstructor;
@@ -17,7 +16,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 class FindAllBankAccountsForBCController implements FindAll<BankAccountForBC> {
 
-    private final FindAllBankAcoountsForBCService service;
+    private final FindAllBankAccountsForBCService service;
 
     @Override
     @GetMapping

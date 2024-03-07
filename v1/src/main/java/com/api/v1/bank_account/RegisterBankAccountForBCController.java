@@ -1,4 +1,4 @@
-package com.api.v1.bank_account.for_bc.register;
+package com.api.v1.bank_account;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/bank-account-for-bc")
 @AllArgsConstructor
-public class RegisterBankAccountForBCController implements Register<String> {
+class RegisterBankAccountForBCController implements Register<String> {
     
     private final RegisterBankAccountForBCService service;
 

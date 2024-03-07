@@ -1,9 +1,7 @@
-package com.api.v1.bank_account.for_bc;
+package com.api.v1.bank_account;
 
 import org.springframework.stereotype.Service;
 
-import com.api.v1.bank_account.BankAccount;
-import com.api.v1.bank_account.FindBankAccountService;
 import com.api.v1.business_client.BusinessClient;
 import com.api.v1.business_client.FindBusinessClientService;
 import com.api.v1.exceptions.ForbiddenOperationException;
@@ -12,7 +10,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class FindBankAccountForBCService {
+class FindBankAccountForBCService {
 
     private final BankAccountForBCRepository repository;
     private final FindBankAccountService findBankAccount;
