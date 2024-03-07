@@ -18,7 +18,7 @@ public class WithDrawnCastFromBankAccountForBCController implements WithDrawnCas
     private final WithDrawnCastFromBankAccountForBCService service;
     
     @Override
-    @PatchMapping("{ein}/{accountNumber}/{accountNumber}")
+    @PatchMapping("ein/{ein}/accountNumber/{accountNumber}/amount/{amount}")
     public ResponseEntity<Void> withdrawn(@PathVariable String accountNumber, 
                                           @PathVariable String ein, 
                                           @PathVariable double amount) {

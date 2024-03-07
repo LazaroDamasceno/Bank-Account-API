@@ -11,8 +11,8 @@ import com.api.v1.bank_account.BankAccount;
 public interface BankAccountForBCRepository extends JpaRepository<BankAccountForBC, UUID> {
 
     @Query("""
-        select bk from BankAccoutForBC bk
-        bk.bankAccount = :bankAccount
+        select bk from BankAccountForBC bk
+        where bk.bankAccount = :bankAccount
     """)
     BankAccountForBC findByBankAccount(@Param("bankAccount") BankAccount bankAccount);
     

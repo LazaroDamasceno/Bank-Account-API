@@ -15,7 +15,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/bank-accounts-for-bc")
 @AllArgsConstructor
-class FindAllBankAcoountsForBCController implements FindAll<BankAccountForBC> {
+class FindAllBankAccountsForBCController implements FindAll<BankAccountForBC> {
 
     private final FindAllBankAcoountsForBCService service;
 

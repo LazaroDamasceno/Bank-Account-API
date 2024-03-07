@@ -1,6 +1,8 @@
 package com.api.v1.bank_account.for_bc.delete;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +18,8 @@ class DeleteBankAccoutForBCController implements DeleteBankAccount {
     private final DeleteBankAccoutForBCService service;
     
     @Override
-    public ResponseEntity<Void> delete(String accountNumber, String ein) {
+    @DeleteMapping("ein/{ein}/accountNumber/{accountNumber}")
+    public ResponseEntity<Void> delete(@PathVariable String accountNumber, @PathVariable String ein) {
         return service.delete(accountNumber, ein);
     }
     
