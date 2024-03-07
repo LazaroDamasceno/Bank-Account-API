@@ -5,11 +5,13 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.api.v1.generic_interfaces.FindAll;
+
 import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-class FindBusinessesClientsService implements FindBusinessesClients {
+class FindAllBusinessesClientsService implements FindAll<BusinessClient> {
 
     private final BusinessClientRepository repository;
 

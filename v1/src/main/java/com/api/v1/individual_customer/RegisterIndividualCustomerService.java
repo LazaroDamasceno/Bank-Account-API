@@ -6,8 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.api.v1.auxiliary.ForbiddenOperationException;
-import com.api.v1.auxiliary.Register;
+import com.api.v1.generic_interfaces.Register;
+import com.api.v1.exceptions.ForbiddenOperationException;
 
 import lombok.AllArgsConstructor;
 

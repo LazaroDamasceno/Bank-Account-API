@@ -1,4 +1,4 @@
-package com.api.v1.auxiliary;
+package com.api.v1.generic_interfaces;
 
 import org.springframework.http.ResponseEntity;
 

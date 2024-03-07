@@ -1,4 +1,4 @@
-package com.api.v1.auxiliary;
+package com.api.v1.exceptions;
 
 public class ForbiddenOperationException extends RuntimeException {
 

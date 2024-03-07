@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.v1.auxiliary.Register;
+import com.api.v1.generic_interfaces.Register;
 
 import org.springframework.web.bind.annotation.RequestBody;
 
