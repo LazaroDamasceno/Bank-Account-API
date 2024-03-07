@@ -9,7 +9,7 @@ import com.api.v1.generic_interfaces.DeleteBankAccount;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("api/v1/banlk-account-for-bc")
+@RequestMapping("api/v1/bank-account-for-bc")
 @AllArgsConstructor
 class DeleteBankAccoutForBCController implements DeleteBankAccount {
     
