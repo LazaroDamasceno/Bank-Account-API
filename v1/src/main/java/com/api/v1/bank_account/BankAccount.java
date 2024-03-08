@@ -1,5 +1,7 @@
 package com.api.v1.bank_account;
 
+import java.math.BigDecimal;
+import java.time.ZonedDateTime;
 import java.util.UUID;
 
 import com.api.v1.business_client.BusinessClient;
@@ -26,7 +28,9 @@ class BankAccount {
     @Column(unique = true)
     private final UUID accountNumber = UUID.randomUUID();
 
-    private double balance = 0.0;
+    private BigDecimal balance = BigDecimal.ZERO;
+
+    private final ZonedDateTime creationDate = ZonedDateTime.now();
 
     BankAccount(BusinessClient businessClient) {
         this.businessClient = businessClient;
