@@ -23,7 +23,7 @@ class BankAccount {
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "Bussiness_client_id")
-    private BussinessClient BussinessClient;
+    private BussinessClient bussinessClient;
 
     @Column(unique = true)
     private final UUID accountNumber = UUID.randomUUID();
@@ -32,8 +32,8 @@ class BankAccount {
 
     private final ZonedDateTime creationDate = ZonedDateTime.now();
 
-    BankAccount(BussinessClient BussinessClient) {
-        this.BussinessClient = BussinessClient;
+    BankAccount(BussinessClient bussinessClient) {
+        this.bussinessClient = bussinessClient;
     }
 
 }

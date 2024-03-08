@@ -18,12 +18,12 @@ public class FindAllBankAcountsService {
     private final FindBussinessClientService findBussinessClient;
 
     public ResponseEntity<List<BankAccount>> findAll(String ein) {
-        BussinessClient BussinessClient = findBussinessClient.find(ein);
+        BussinessClient bussinessClient = findBussinessClient.find(ein);
         return ResponseEntity.ok(
             repository  
                 .findAll()
                 .stream()
-                .filter(e -> e.getBussinessClient().equals(BussinessClient))
+                .filter(e -> e.getBussinessClient().equals(bussinessClient))
                 .toList()
         );
     }

@@ -17,8 +17,8 @@ public class CreateBankAccountService {
     private final FindBussinessClientService findBussinessClient;
 
     public ResponseEntity<Void> create(String ein) {
-        BussinessClient BussinessClient = findBussinessClient.find(ein);
-        BankAccount bankAccount = new BankAccount(BussinessClient);
+        BussinessClient bussinessClient = findBussinessClient.find(ein);
+        BankAccount bankAccount = new BankAccount(bussinessClient);
         repository.save(bankAccount);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

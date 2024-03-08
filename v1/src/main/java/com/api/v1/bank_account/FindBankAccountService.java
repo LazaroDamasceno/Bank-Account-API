@@ -19,13 +19,13 @@ public class FindBankAccountService {
     private final FindBussinessClientService findBussinessClient;
 
     public BankAccount find(String ein, String accountNumber) {
-        BussinessClient BussinessClient = findBussinessClient.find(ein);
+        BussinessClient bussinessClient = findBussinessClient.find(ein);
         UUID bankAccountNumber = UUID.fromString(accountNumber);
         Optional<BankAccount> optional = repository.findByAccountNumber(bankAccountNumber);
         if (optional.isEmpty()) {
             throw new ForbiddenOperationException("Bank account does not exist.");
         }
-        if (optional.get().getBussinessClient().equals(BussinessClient)) {
+        if (optional.get().getBussinessClient().equals(bussinessClient)) {
             throw new ForbiddenOperationException("Bank account does not belong to the bussiness client.");
         }
         return optional.get();
