@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.api.v1.business_client.BusinessClient;
-import com.api.v1.business_client.FindBusinessClientService;
+import com.api.v1.bussiness_client.BussinessClient;
+import com.api.v1.bussiness_client.FindBussinessClientService;
 
 import lombok.AllArgsConstructor;
 
@@ -15,15 +15,15 @@ import lombok.AllArgsConstructor;
 public class FindAllBankAcountsService {
     
     private final BankAccountRepository repository;
-    private final FindBusinessClientService findBusinessClient;
+    private final FindBussinessClientService findBussinessClient;
 
     public ResponseEntity<List<BankAccount>> findAll(String ein) {
-        BusinessClient businessClient = findBusinessClient.find(ein);
+        BussinessClient BussinessClient = findBussinessClient.find(ein);
         return ResponseEntity.ok(
             repository  
                 .findAll()
                 .stream()
-                .filter(e -> e.getBusinessClient().equals(businessClient))
+                .filter(e -> e.getBussinessClient().equals(BussinessClient))
                 .toList()
         );
     }

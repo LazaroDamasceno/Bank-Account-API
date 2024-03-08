@@ -1,4 +1,4 @@
-package com.api.v1.business_client;
+package com.api.v1.bussiness_client;
 
 import java.util.List;
 
@@ -9,11 +9,11 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-class FindAllBusinessesClientsService {
+class FindAllBussinessClientsService {
 
-    private final BusinessClientRepository repository;
+    private final BussinessClientRepository repository;
 
-    public ResponseEntity<List<BusinessClient>> findAll() {
+    public ResponseEntity<List<BussinessClient>> findAll() {
         return ResponseEntity.ok(
             repository.findAll()
         );

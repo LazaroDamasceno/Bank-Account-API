@@ -1,4 +1,4 @@
-package com.api.v1.business_client;
+package com.api.v1.bussiness_client;
 
 import java.util.List;
 
@@ -12,12 +12,12 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/bussinesses-clients")
 @AllArgsConstructor
-class FindAllBusinessesClientsController {
+class FindAllBussinesssClientsController {
 
-    private final FindAllBusinessesClientsService service;
+    private final FindAllBussinessClientsService service;
 
     @GetMapping
-    public ResponseEntity<List<BusinessClient>> findAll() {
+    public ResponseEntity<List<BussinessClient>> findAll() {
         return service.findAll();
     }
 

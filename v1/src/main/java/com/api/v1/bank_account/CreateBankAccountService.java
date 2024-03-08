@@ -4,8 +4,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.api.v1.business_client.BusinessClient;
-import com.api.v1.business_client.FindBusinessClientService;
+import com.api.v1.bussiness_client.BussinessClient;
+import com.api.v1.bussiness_client.FindBussinessClientService;
 
 import lombok.AllArgsConstructor;
 
@@ -14,11 +14,11 @@ import lombok.AllArgsConstructor;
 public class CreateBankAccountService {
 
     private final BankAccountRepository repository;
-    private final FindBusinessClientService findBusinessClient;
+    private final FindBussinessClientService findBussinessClient;
 
     public ResponseEntity<Void> create(String ein) {
-        BusinessClient businessClient = findBusinessClient.find(ein);
-        BankAccount bankAccount = new BankAccount(businessClient);
+        BussinessClient BussinessClient = findBussinessClient.find(ein);
+        BankAccount bankAccount = new BankAccount(BussinessClient);
         repository.save(bankAccount);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

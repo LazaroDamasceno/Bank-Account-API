@@ -1,4 +1,4 @@
-package com.api.v1.business_client;
+package com.api.v1.bussiness_client;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,12 +12,12 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/v1/bussiness-client")
 @AllArgsConstructor
-class RegisterBusinessClientController {
+class RegisterBussinessClientController {
     
-    private final RegisterBusinessClientService service;
+    private final RegisterBussinessClientService service;
 
     @PostMapping
-    public ResponseEntity<Void> register(@RequestBody RegisterBusinessClientDTO dto) {
+    public ResponseEntity<Void> register(@RequestBody RegisterBussinessClientDTO dto) {
         return service.register(dto);
     }
 

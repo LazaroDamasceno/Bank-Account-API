@@ -1,4 +1,4 @@
-package com.api.v1.business_client;
+package com.api.v1.bussiness_client;
 
 import java.util.UUID;
 
@@ -16,11 +16,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "v1_business_client")
+@Table(name = "v1_Bussiness_client")
 @Getter
 @Setter
 @NoArgsConstructor
-public class BusinessClient {
+public class BussinessClient {
     
     @Id
     private final UUID id = UUID.randomUUID();
@@ -32,7 +32,7 @@ public class BusinessClient {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    BusinessClient(RegisterBusinessClientDTO dto) {
+    BussinessClient(RegisterBussinessClientDTO dto) {
         this.ein = dto.ein();
         this.customer = new Customer(dto.customer());
     }

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
-import com.api.v1.business_client.BusinessClient;
+import com.api.v1.bussiness_client.BussinessClient;
 
 import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
@@ -22,8 +22,8 @@ class BankAccount {
     private final UUID id = UUID.randomUUID();
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "business_client_id")
-    private BusinessClient businessClient;
+    @JoinColumn(name = "Bussiness_client_id")
+    private BussinessClient BussinessClient;
 
     @Column(unique = true)
     private final UUID accountNumber = UUID.randomUUID();
@@ -32,8 +32,8 @@ class BankAccount {
 
     private final ZonedDateTime creationDate = ZonedDateTime.now();
 
-    BankAccount(BusinessClient businessClient) {
-        this.businessClient = businessClient;
+    BankAccount(BussinessClient BussinessClient) {
+        this.BussinessClient = BussinessClient;
     }
 
 }
