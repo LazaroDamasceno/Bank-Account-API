@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class FindAllBankAcountsService {
+public class FindAllBankAccountsService {
     
     private final BankAccountRepository repository;
     private final FindBussinessClientService findBussinessClient;
