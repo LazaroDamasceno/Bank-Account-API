@@ -19,7 +19,7 @@ class BankAccountForBC {
     @Id
     private final UUID id = UUID.randomUUID();
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "bc_id")
     private BusinessClient businessClient;
 
