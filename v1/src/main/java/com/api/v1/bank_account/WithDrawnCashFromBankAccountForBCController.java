@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @RequestMapping("api/vq/bank-account-for-bc")
 @AllArgsConstructor
-class WithDrawnCastFromBankAccountForBCController implements WithDrawnCash {
+class WithDrawnCashFromBankAccountForBCController implements WithDrawnCash {
     
     private final WithDrawnCastFromBankAccountForBCService service;
     
