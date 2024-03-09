@@ -25,7 +25,7 @@ public class FindBankAccountService {
         if (optional.isEmpty()) {
             throw new ForbiddenOperationException("Bank account does not exist.");
         }
-        if (optional.get().getBussinessClient().equals(bussinessClient)) {
+        if (!optional.get().getBussinessClient().equals(bussinessClient)) {
             throw new ForbiddenOperationException("Bank account does not belong to the bussiness client.");
         }
         return optional.get();

@@ -1,7 +1,7 @@
 package com.api.v1.bank_account;
 
 import java.math.BigDecimal;
-import java.time.ZonedDateTime;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import com.api.v1.bussiness_client.BussinessClient;
@@ -21,16 +21,16 @@ class BankAccount {
     @Id
     private final UUID id = UUID.randomUUID();
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "Bussiness_client_id")
-    private BussinessClient bussinessClient;
-
     @Column(unique = true)
     private final UUID accountNumber = UUID.randomUUID();
 
-    private BigDecimal balance = BigDecimal.ZERO;
+    private BigDecimal balance = BigDecimal.ZERO.setScale(2);
 
-    private final ZonedDateTime creationDate = ZonedDateTime.now();
+    private final LocalDateTime creationDate = LocalDateTime.now();
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "Bussiness_client_id")
+    private BussinessClient bussinessClient;
 
     BankAccount(BussinessClient bussinessClient) {
         this.bussinessClient = bussinessClient;

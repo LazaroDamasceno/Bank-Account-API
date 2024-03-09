@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("api/v1/bank-accounts")
+@RequestMapping("api/v1/bank-account")
 @AllArgsConstructor
 public class FindBankAccountController {
 

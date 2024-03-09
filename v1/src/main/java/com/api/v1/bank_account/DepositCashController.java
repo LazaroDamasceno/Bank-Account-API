@@ -15,7 +15,7 @@ public class DepositCashController {
 
     private final DepositCashService service;
 
-    @PatchMapping("ein/{ein}/accountNumber/{accountNumber}/amount/{amount}")
+    @PatchMapping("accountNumber/{accountNumber}/ein/{ein}/amount/{amount}")
     public ResponseEntity<Void> deposit(@PathVariable String ein, 
                                         @PathVariable String accountNumber, 
                                         @PathVariable double amount
