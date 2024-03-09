@@ -1,9 +1,0 @@
-{
-    "ein": "987654321",
-    "customer": {
-        "fullName": "Dudin Mifflin Paper Company",
-        "email": "contact@dudinmufllin.com",
-        "phoneNumber": "2345678900",
-        "fullAddress": "St. Dennis"
-    }
-}
