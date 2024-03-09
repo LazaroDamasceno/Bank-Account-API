@@ -18,24 +18,16 @@ To watch the api running, click [here]().
 
 ## Examples
 
-Register first client client
+Register client
 ```
 {
-    "ein": "987654321",
-    "fullName": "Dudin Mifflin Paper Company",
-    "emil": "contact@dudinmiflin.com",
-    "phoneNumber": "2345678900",
-    "fullAddress": "St. Dennis"
-}
-```
-
-Register second client client
-```
-{
-    "ein": "123456789",
-    "fullName": "Paper Company Inc.",
-    "email": "contact@papercompany.com",
-    "phoneNumber": "2345678900",
-    "fullAddress": "St. Dennis"
+  "fullAddress": "St. Exupery Blv, LA, CA, 6333",
+   "systemUserDTO": {
+      "fullName": "G Madina",
+      "ssn": "123456789",
+      "birthDay": "12/12/2000",
+      "email": "madina@madina.net",
+      "phoneNumber": "12345678900"
+  }
 }
 ```
