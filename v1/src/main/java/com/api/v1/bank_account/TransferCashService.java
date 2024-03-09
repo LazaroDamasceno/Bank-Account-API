@@ -1,8 +1,6 @@
 package com.api.v1.bank_account;
 
 import java.math.BigDecimal;
-import java.util.Optional;
-import java.util.UUID;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -24,7 +22,19 @@ public class TransferCashService {
             throw new ForbiddenOperationException("The amount cannot be less or equals to zero.");
         }
 
-        //return ResponseEntity.noContent().build();
+        BankAccount whoTransfer = findBankAccount.find(ein, accountNumber);
+        BigDecimal balance = whoTransfer.getBalance();
+        balance = balance.subtract(BigDecimal.valueOf(amount));
+        whoTransfer.setBalance(balance);
+        repository.save(whoTransfer);
+
+        BankAccount whoRecieve = findBankAccount.find(toBankAccount);
+        balance = whoRecieve.getBalance();
+        balance = balance.add(BigDecimal.valueOf(amount));
+        whoRecieve.setBalance(balance);
+        repository.save(whoRecieve);
+
+        return ResponseEntity.noContent().build();
     }
 
 }

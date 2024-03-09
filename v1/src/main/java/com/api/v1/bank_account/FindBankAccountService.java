@@ -30,5 +30,13 @@ public class FindBankAccountService {
         }
         return optional.get();
     }
+
+    public BankAccount find(String accountNumber) {
+        Optional<BankAccount> optional = repository.findByAccountNumber(UUID.fromString(accountNumber));
+        if (optional.isEmpty()) {
+            throw new ForbiddenOperationException("Bank account does not exist.");
+        }
+        return optional.get();
+    }
     
 }
