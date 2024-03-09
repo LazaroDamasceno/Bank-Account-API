@@ -1,9 +1,0 @@
-{
-    "ein": "123456789",
-    "customer": {
-        "fullName": "Paper Company Inc.",
-        "email": "contact@papercompany.com",
-        "phoneNumber": "2345678900",
-        "fullAddress": "St. Dennis"
-    }
-}
