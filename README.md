@@ -15,17 +15,3 @@ To watch the api running, click [here]().
 |Version|Main changes|
 |:-:|:-:|
 |1|-|
-
-## Examples
-
-Register client
-```
-{
-  "fullAddress": "St. Exupery Blv, LA, CA, 6333",
-  "fullName": "G Madina",
-  "ssn": "123456789",
-  "birthDay": "12/12/2000",
-  "email": "madina@madina.net",
-  "phoneNumber": "12345678900"
-}
-```
