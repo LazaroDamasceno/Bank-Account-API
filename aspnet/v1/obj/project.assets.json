@@ -3005,11 +3005,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lazar\\source\\repos\\aspnet\\v1\\v1.csproj",
+      "projectUniqueName": "C:\\Users\\lazar\\Bank-Account-API\\aspnet\\v1\\v1.csproj",
       "projectName": "v1",
-      "projectPath": "C:\\Users\\lazar\\source\\repos\\aspnet\\v1\\v1.csproj",
+      "projectPath": "C:\\Users\\lazar\\Bank-Account-API\\aspnet\\v1\\v1.csproj",
       "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lazar\\source\\repos\\aspnet\\v1\\obj\\",
+      "outputPath": "C:\\Users\\lazar\\Bank-Account-API\\aspnet\\v1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
