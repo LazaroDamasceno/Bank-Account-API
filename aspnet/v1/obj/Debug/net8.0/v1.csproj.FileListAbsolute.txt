@@ -1,0 +1,7 @@
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.csproj.AssemblyReference.cache
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.AssemblyInfoInputs.cache
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.AssemblyInfo.cs
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.csproj.CoreCompileInputs.cache
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lazar\source\repos\aspnet\v1\obj\Debug\net8.0\v1.MvcApplicationPartsAssemblyInfo.cache
