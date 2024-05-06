@@ -12,6 +12,12 @@ To run the API, it's necessary to access the Swagger UI through. Place `localhos
 
 The Swagger UI allows its user to use the API online. By using the Swagger UI, there's no need to install softwares like Postman.
 
+## Warning
+
+To access the H2 database, type on the browser `localhost:8080/h2-console`. When the h2'c cosnsole is open, type the following:
+1. In `JDBC URL`: `jdbc:h2:mem:testdb`
+2. In `User Name`: `sa`
+
 ## Versions
 
 |Version|Main changes|
